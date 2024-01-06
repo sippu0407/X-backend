@@ -6,15 +6,16 @@ const tweetSchema=new mongoose.Schema({
         type: String,
         required:true
     },
-    email:{
-        type:String
-    },
     comments:[
         {
             type: mongoose.Schema.Types.ObjectId,
             ref:'Comment'
         }
-    ]
+    ],
+    hashtags:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Hashtag'
+    }]
 },{timestamps:true});
 
 

@@ -5,10 +5,7 @@ const commentSchema=new mongoose.Schema({
     content:{
         type: String,
         required:true
-    },
-    email:{
-        type:String
-    },
+    }
   
 },{timestamps:true});
 

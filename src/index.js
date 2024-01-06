@@ -11,7 +11,4 @@ app.listen(5000,async()=>{
     await connect();
     console.log('connected to mongoose');
     
-    const tweet= await Tweet.findById(id,data);
-
-    console.log(tweet);
 });
